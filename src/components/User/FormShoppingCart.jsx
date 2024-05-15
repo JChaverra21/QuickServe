@@ -68,10 +68,11 @@ const FormShoppingCart = ({ isOpen, onOpenChange }) => {
       console.log(data);
 
       // Enviar los datos a la URL proporcionada
-      fetch("https://8240-181-237-196-79.ngrok-free.app/Pedido", {
+      fetch("https://0763-181-237-196-79.ngrok-free.app/Pedido", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
+          "ngrok-skip-browser-warning": "true",
         },
         body: JSON.stringify(data),
       })
